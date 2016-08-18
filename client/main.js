@@ -3,20 +3,12 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
 
-Template.hello.onCreated(function helloOnCreated() {
-  // counter starts at 0
-  this.counter = new ReactiveVar(0);
+import {Timer} from '../imports/api/tasks.js';
+
+Template.timer.helpers ({
+    seconds:function(){  //read out value to paragraph in html code      
+      var currentTime=Timer.findOne();  //grab single value from Timer
+      return currentTime.number;  //return count value
+    }
 });
 
-Template.hello.helpers({
-  counter() {
-    return Template.instance().counter.get();
-  },
-});
-
-Template.hello.events({
-  'click button'(event, instance) {
-    // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
-  },
-});
