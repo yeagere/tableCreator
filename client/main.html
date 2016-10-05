@@ -1,13 +1,38 @@
-<head>
-  <title>counter</title>
-</head>
-
 <body>
-  <h1>Welcome to Emma's Counter and Data Table!</h1>
-  {{> timer}}
-  {{> systemTable}}
-  {{> staticTable}}
+  <div class = "container">
+    <header>
+      <h1>System Table</h1>
+    </header>
+
+  {{> header}}
+  </div>  
 </body>
+
+<template name = "header">
+  <table>
+    <tr>
+    {{#each headers}}
+      <th>
+        {{text}}
+      </th>
+    {{/each}}
+    </tr>
+    <tr>
+    {{#each data1}}
+      <td>
+        {{text}}
+      </td>
+    {{/each}}
+    </tr>
+    <tr>
+    {{#each data2}}
+      <td>
+        {{text}}
+      </td>
+    {{/each}}
+    </tr>
+  </table>
+</template>
 
 <template name="timer">
 <!--  <p>The current count is {{seconds}}.</p> -->
@@ -16,7 +41,6 @@
 <template name="systemTable">
   <table>
   <tr>
-
     <th>AMC HOT_SWAP</th>
     <th>0x0</th>
     <th>discrete</th>   
@@ -29,7 +53,7 @@
     <th>na</th>  
   </tr>
   {{#each getTable}}
-  <tr> <!-- add each get table for i=1, i++-->
+  <tr>
     <td>{{AMC_HOT_SWAP}}</td>
     <td>{{OxO}}</td>
     <td>{{discrete}}</td>
@@ -41,7 +65,7 @@
     <td>{{na5}}</td>
     <td>{{na6}}</td>
   </tr>
-  {{/each}}
+  {{/each}} 
   </table>
 </template>
 
