@@ -5,22 +5,31 @@ import './main.html';
 import {Timer} from '../imports/api/tasks.js';
 import {Table} from '../imports/api/tasks.js';
 
-//Template.timer.helpers ({
-//    seconds:function(){  //read out value to paragraph in html code      
-//      var currentTime=Timer.findOne();  //grab single value from Timer
-//      return currentTime.number;  //return count value
-//    }
-//});
-
-Template.systemTable.helpers ({
-    //return Table.find({});
-    getTable:function(){
-      return Table.find({});
+/*Template.timer.helpers ({
+    seconds:function(){  //read out value to paragraph in html code      
+      var currentTime=Timer.findOne();  //grab single value from Timer
+      return currentTime.number;  //return count value
     }
+}); */
+
+Template.header.helpers({
+  headers: [
+    {text: 'AMC_HOT_SWAP'}, {text: '0x0'}, {text: 'discrete'}, {text: '0x0100'}, {text: 'na1'}, {text: 'na2'}, {text: 'na3'}, {text: 'na4'}, {text: 'na5'}, {text: 'na6'},
+  ],
+  data1: 
+    [{text: '+12V'},{text: '12.475'},{text: 'Volts'},{text: 'ok'},{text: '9.934'},{text: '7.932'},{text: '5.930'},{text: '13.861'},{text: '15.863'},{text: '18.866'},],
+  data2:
+    [{text: '+3.3V MMC'},{text: '33.850'},{text: 'Volts'},{text: 'ok'},{text: '29.845'},{text: '30.785'},{text: '31.960'},{text: '34.780'},{text: '35.955'},{text: '36.895'},],
 });
 
-Template.staticTable.OnRender = function(){ //rebuild the table each time site is refreshed
-  Table.remove({}); //"meteor reset"
+/*Template.systemTable.helpers ({
+    getTable:function(){
+      return Table.find({});
+    } 
+}); */
+
+/* Template.staticTable.OnRender = function(){ //rebuild the table each time site is refreshed
+  Table.remove({}); //"meteor reset" 
 
   var tbl = $('#staticTable tr:has(td)').map(function(i, v) { //jquery referenced from online
     var $td =  $('td', this);
@@ -40,7 +49,7 @@ Template.staticTable.OnRender = function(){ //rebuild the table each time site i
 
     tbl.forEach(function(row) { //run data loop for each object (row)
 	Table.insert(row); //insert row into db 
-  });
+  });  
 
-};
+}; */
 
