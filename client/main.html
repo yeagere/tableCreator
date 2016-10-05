@@ -4,14 +4,14 @@
       <h1>System Table</h1>
     </header>
 
-  {{> header}}
+  {{> table}}
   </div>  
 </body>
 
-<template name = "header">
+<template name = "table">
   <table>
     <tr>
-    {{#each headers}}
+    {{#each header}}
       <th>
         {{text}}
       </th>
