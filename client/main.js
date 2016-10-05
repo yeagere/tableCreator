@@ -12,8 +12,8 @@ import {Table} from '../imports/api/tasks.js';
     }
 }); */
 
-Template.header.helpers({
-  headers: [
+Template.table.helpers({
+  header: [
     {text: 'AMC_HOT_SWAP'}, {text: '0x0'}, {text: 'discrete'}, {text: '0x0100'}, {text: 'na1'}, {text: 'na2'}, {text: 'na3'}, {text: 'na4'}, {text: 'na5'}, {text: 'na6'},
   ],
 
