@@ -16,6 +16,7 @@
 <template name="systemTable">
   <table>
   <tr>
+
     <th>AMC HOT_SWAP</th>
     <th>0x0</th>
     <th>discrete</th>   
@@ -28,7 +29,7 @@
     <th>na</th>  
   </tr>
   {{#each getTable}}
-  <tr>
+  <tr> <!-- add each get table for i=1, i++-->
     <td>{{AMC_HOT_SWAP}}</td>
     <td>{{OxO}}</td>
     <td>{{discrete}}</td>
