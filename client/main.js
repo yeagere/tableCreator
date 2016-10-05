@@ -16,10 +16,35 @@ Template.header.helpers({
   headers: [
     {text: 'AMC_HOT_SWAP'}, {text: '0x0'}, {text: 'discrete'}, {text: '0x0100'}, {text: 'na1'}, {text: 'na2'}, {text: 'na3'}, {text: 'na4'}, {text: 'na5'}, {text: 'na6'},
   ],
-  data1: 
-    [{text: '+12V'},{text: '12.475'},{text: 'Volts'},{text: 'ok'},{text: '9.934'},{text: '7.932'},{text: '5.930'},{text: '13.861'},{text: '15.863'},{text: '18.866'},],
-  data2:
-    [{text: '+3.3V MMC'},{text: '33.850'},{text: 'Volts'},{text: 'ok'},{text: '29.845'},{text: '30.785'},{text: '31.960'},{text: '34.780'},{text: '35.955'},{text: '36.895'},],
+
+  row: [
+    {data: [
+      {text: '+12V'},{text: '12.475'},{text: 'Volts'},{text: 'ok'},{text: '9.934'},{text: '7.932'},{text: '5.930'},{text: '13.861'},{text: '15.863'},{text: '18.866'},
+    ]}, 
+    {data: [
+      {text: '+3.3V MMC'},{text: '33.850'},{text: 'Volts'},{text: 'ok'},{text: '29.845'},{text: '30.785'},{text: '31.960'},{text: '34.780'},{text: '35.955'},{text: '36.895'},
+    ]},
+//need to update with real data
+    {data: [
+      {text: '+3.3V MMC'},{text: '33.850'},{text: 'Volts'},{text: 'ok'},{text: '29.845'},{text: '30.785'},{text: '31.960'},{text: '34.780'},{text: '35.955'},{text: '36.895'},
+    ]},
+    {data: [
+      {text: '+3.3V MMC'},{text: '33.850'},{text: 'Volts'},{text: 'ok'},{text: '29.845'},{text: '30.785'},{text: '31.960'},{text: '34.780'},{text: '35.955'},{text: '36.895'},
+    ]},
+    {data: [
+      {text: '+3.3V MMC'},{text: '33.850'},{text: 'Volts'},{text: 'ok'},{text: '29.845'},{text: '30.785'},{text: '31.960'},{text: '34.780'},{text: '35.955'},{text: '36.895'},
+    ]},
+    {data: [
+      {text: '+3.3V MMC'},{text: '33.850'},{text: 'Volts'},{text: 'ok'},{text: '29.845'},{text: '30.785'},{text: '31.960'},{text: '34.780'},{text: '35.955'},{text: '36.895'},
+    ]},
+    {data: [
+      {text: '+3.3V MMC'},{text: '33.850'},{text: 'Volts'},{text: 'ok'},{text: '29.845'},{text: '30.785'},{text: '31.960'},{text: '34.780'},{text: '35.955'},{text: '36.895'},
+    ]},
+    {data: [
+      {text: '+3.3V MMC'},{text: '33.850'},{text: 'Volts'},{text: 'ok'},{text: '29.845'},{text: '30.785'},{text: '31.960'},{text: '34.780'},{text: '35.955'},{text: '36.895'},
+    ]},
+
+  ],
 });
 
 /*Template.systemTable.helpers ({
