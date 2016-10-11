@@ -1,9 +1,9 @@
+Table = new Mongo.Collection("table");
+
 import { Meteor } from 'meteor/meteor';
 
-import {Table} from '../imports/api/tasks.js';
-
 Meteor.startup(() => {
-
+  // code to run on server at startup
   var headerData = ['AMC_HOT_SWAP','0x0','discrete','0x0100','na1','na2','na3','na4','na5','na6'];
 
   var mainData = [
@@ -23,6 +23,5 @@ Meteor.startup(() => {
   console.log(Table.findOne({}).main);
 
 });
-
 
 

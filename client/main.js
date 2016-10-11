@@ -1,6 +1,5 @@
-import { Meteor } from 'meteor/meteor';
-import {Table} from '../imports/api/tasks.js';
 import { Template } from 'meteor/templating';
+import { Table } from '../server/main.js';
 
 import './main.html';
 
@@ -18,6 +17,8 @@ Template.table.mainData = function() {
   return main;
 };
 
+
+// commented code below works just fine
 /*  var headerData = ['AMC_HOT_SWAP','0x0','discrete','0x0100','na1','na2','na3','na4','na5','na6'];
 
   var mainData = [
